@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeliceMente | Life Coaching</title>
+    <link rel="icon" href="assets/img/felicemente-logo.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- BS5 -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <div
+        class="banner-pre-nav d-none d-sm-flex justify-content-between align-items-center"
+        id="top-nav"
+      >
+        <div class="contattami"><a href="">Chiamami per un preventivo</a></div>
+        <div class="orari d-none d-lg-block">
+          Luv - Ven | 09:00 - 13:00 / 16:00 - 19:00
+        </div>
+        <div
+          class="social d-flex justify-content-end align-items-center gap-3 me-2"
+        >
+          <span>Seguimi su</span>
+          <div class="social-container d-flex gap-2">
+            <i class="bi bi-facebook social-icons"></i>
+            <i class="bi bi-twitter-x social-icons"></i>
+            <i class="bi bi-instagram social-icons"></i>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-md navbar-dark sticky-top"
+        id="bottom-nav"
+      >
+        <div class="container-fluid px-3 px-md-5">
+          <a class="navbar-brand" href="index.html">
+            <div class="logo-container">
+              <img
+                id="logo-nav"
+                src="./assets/img/felicemente-logo.png"
+                alt="felice-mente logo"
+                style="width: 100px"
+              />
+            </div>
+          </a>
+          <button
+            class="navbar-toggler d-md-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active font-weight-bold"
+                  href="#"
+                  aria-current="page"
+                  >Home<span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Dropdown</a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Action 1</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+              </li>
+            </ul>
+            <div class="d-grid gap-2">
+              <button
+                type="button"
+                name=""
+                id="prenota-button"
+                class="btn btn-primary ms-5 buttons"
+              >
+                Prenota una visita
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid big-img-container">
+      <div class="container-fluid px-4">
+        <div class="row">
+          <div class="col-lg-8 ps-sm-5">
+            <div class="container-fluid ps-3 ps-xl-5">
+              <h1 class="title">
+                <span class="ps-5">Sblocca ora <br /></span>il tuo vero
+                <br /><span class="ps-3" id="potenziale">potenziale</span>
+              </h1>
+              <p class="h5 ps-md-5 pt-2" id="subtitle">
+                Insieme possiamo costruire il tuo futuro.
+              </p>
+              <button class="btn mt-3 buttons" id="contact-btn">
+                Contattami
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="container d-lg-flex justify-content-end pt-3 pt-lg-5 relative"
+            >
+              <div id="services-box">
+                <h3 class="services">Cosa offro?</h3>
+                <ul class="services-list">
+                  <li class="list-item">
+                    <p>Consulenza di Life Coaching personalizzata</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Supporto per Autismo e inserimento lavorativo</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Sessioni motivazionali per gestione familiare</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Percorsi di Crescita Personale e Professionale</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 pt-7 pt-10 pt-md-0">
+      <div class="row pb-3">
+        <div class="col-lg-6">
+          <div class="container">
+            <h2 id="chisono-title">Chi sono?</h2>
+            <p>
+              Ciao, sono il Dott. Orazio Manipolini e sono qui per aiutarti a
+              scoprire il tuo potenziale! Con un sorriso e un po’ di ironia, mi
+              dedico a rendere la psicologia un viaggio accessibile e
+              divertente. La mia formazione in Psicologia all’Università di
+              Bologna mi ha dato le basi, ma è stata la mia passione per il life
+              coaching e il supporto per l’autismo a guidarmi nella mia
+              carriera. Credo che ogni persona meriti di affrontare le proprie
+              sfide con un approccio positivo e leggero. Nel mio studio, uso
+              tecniche innovative e un'atmosfera informale per rendere ogni
+              incontro un'esperienza unica. Mi piace "manipolare" le emozioni
+              con empatia, guidando i miei pazienti attraverso percorsi di
+              crescita personale. Quando non sono in studio, mi piace esplorare
+              nuove forme di arte e intrattenimento, cercando sempre ispirazione
+              per il mio lavoro. La mia missione? Aiutarti a vivere una vita più
+              serena e soddisfacente, dimostrando che prendersi cura della
+              propria mente può essere anche un viaggio divertente!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div
+          class="col-lg-5"
+          id="chisono-img"
+          aria-describedby="foto del dottor Orazio Manipolini"
+        ></div>
+      </div>
+      <div class="container-fluid mt-4 mb-4 row">
+        <div class="col-lg-4">
+          <i
+            class="bi bi-heart-fill serv-icons d-flex justify-content-center mb-3"
+          ></i>
+          <h3 class="text-center serv-titles">AUTISMO</h3>
+          <p class="text-center">
+            Offro supporto personalizzato per individui con autismo, aiutandoli
+            a sviluppare abilità sociali, comunicative e di vita quotidiana in
+            un ambiente accogliente e comprensivo.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i
+            class="bi bi-piggy-bank-fill serv-icons d-flex justify-content-center mb-3"
+          ></i>
+          <h3 class="text-center serv-titles">LAVORO</h3>
+          <p class="text-center">
+            Facilito l’ingresso nel mondo del lavoro, fornendo orientamento
+            professionale e strategie per affrontare il mercato del lavoro,
+            potenziando le competenze e la fiducia in se stessi.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i
+            class="bi bi-house-heart-fill serv-icons d-flex justify-content-center mb-3"
+          ></i>
+          <h3 class="text-center serv-titles">LIFE COACHING</h3>
+          <p class="text-center">
+            Il mio life coaching è dedicato a chi cerca di migliorare la propria
+            vita. Lavoriamo insieme per identificare obiettivi, superare
+            ostacoli e raggiungere il benessere personale.
+          </p>
+        </div>
+      </div>
+      <div class="row pt-5 pb-5">
+        <div class="col-lg-6">
+          <div class="container">
+            <h2 id="innovazione-title">Cosa c'è di nuovo?</h2>
+            <p>
+              Nel mondo moderno, l'esperienza online gioca un ruolo cruciale nel
+              facilitare l'accesso ai servizi psicologici. Il dott. Orazio offre
+              una piattaforma intuitiva e user-friendly, dove gli utenti possono
+              navigare facilmente tra le informazioni e prenotare sessioni con
+              il professionista senza difficoltà. L'interfaccia è progettata per
+              essere accogliente, consentendo ai visitatori di sentirsi a
+              proprio agio mentre esplorano le opzioni disponibili. Questo
+              approccio digitale non solo rende più accessibili i servizi, ma
+              offre anche la comodità di poter prenotare sessioni direttamente
+              dal proprio dispositivo, senza dover affrontare la pressione di un
+              incontro di persona. La tecnologia consente inoltre una maggiore
+              flessibilità, permettendo di adattare le sessioni alle esigenze
+              individuali, creando un'esperienza personalizzata che risponde
+              alle specifiche necessità degli utenti.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4" id="innovazione" aria-describedby=""></div>
+      </div>
+      <div class="container-fluid forms-box">
+        <div class="row" id="msg">
+          <div class="container mt-5 col-lg-12">
+            <h2>Contattami</h2>
+            <form>
+              <div class="row">
+                <div class="form-group col-lg-4 mb-4">
+                  <label for="name">Nome:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Il tuo nome completo"
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-4 mb-4">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="La tua email"
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-4 mb-4">
+                  <label for="phone">Cellulare:</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Il tuo numero di telefono"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-lg-12">
+                  <label for="message">Messaggio</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Scrivi il tuo messaggio"
+                    required
+                  ></textarea>
+                </div>
+                <div class="row container d-flex justify-content-center">
+                  <button type="submit" class="btn mt-3 col-lg-8" id="send-msg">
+                    Invia
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="row container d-flex justify-content-center pt-5">
+            <h3 class="col-lg-4 text-center">Oppure...</h3>
+          </div>
+          <div class="row" id="book">
+            <div class="container mt-5 col-lg-12">
+              <h2 class="text-center">Prenota una call</h2>
+              <div class="row">
+                <div class="mx-auto col-lg-12">
+                  <label for="date" class="form-label"
+                    >Seleziona una data:</label
+                  >
+                  <input type="date" class="form-control" id="date" />
+                  <div class="row">
+                    <div class="mt-3 col-lg-4">
+                      <label for="name" class="form-label">Nome:</label>
+
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Il tuo nome completo"
+                      />
+                    </div>
+
+                    <div class="mt-3 col-lg-4">
+                      <label for="email" class="form-label">Email:</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="La tua email"
+                      />
+                    </div>
+
+                    <div class="mt-3 col-lg-4">
+                      <label for="phone" class="form-label">Cellulare:</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Il tuo numero di telefono"
+                      />
+                    </div>
+                  </div>
+                  <div class="container row d-flex justify-content-center">
+                    <button id="check-av" class="btn mt-4 col-lg-8">
+                      Controlla Disponibilità
+                    </button>
+                  </div>
+
+                  <div id="timeSlots" class="mt-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-lg-start mt-5 footer">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5 class="text-uppercase">Contatti</h5>
+            <p>
+              Orazio Manipolini<br />
+              Email:
+              <a href="mailto:orazio.manipolini@curoipazzi.mado"
+                >felice@mastronzo.mado</a
+              ><br />
+              Telefono: <a href="tel:+393334445551">+39 334 464 5791</a><br />
+            </p>
+          </div>
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5 class="text-uppercase">Seguimi sui social</h5>
+            <a href="#" class="me-4 text-reset"
+              ><i class="bi bi-facebook social-icons"></i> Facebook</a
+            >
+            <a href="#" class="me-4 text-reset"
+              ><i class="bi bi-instagram social-icons"></i> Instagram</a
+            >
+            <a href="#" class="text-reset"
+              ><i class="bi bi-twitter-x social-icons"></i> X (Twitter)</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 bg-dark text-white">
+        © 2024 Orazio Manipolini. Tutti i diritti riservati.
+      </div>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script src="JS/scroll.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

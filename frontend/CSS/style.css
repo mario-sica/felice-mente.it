@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --darker-green: #506041;
+  --dark-green: #738561;
+  --light-green: #93a382;
+  --dark-pink: #e47885;
+  --light-pink: #fadcdf;
+}
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--dark-green);
+}
+
+header {
+  background-color: var(--dark-green);
+}
+
+.pt-7 {
+  padding-top: 7rem !important;
+}
+
+.ps-10 {
+  padding-left: 7rem !important;
+}
+
+.scroll {
+  transform: translateY(-30px);
+}
+
+.relative {
+  position: relative;
+}
+
+.banner-pre-nav {
+  background-color: var(--light-pink);
+}
+
+#top-nav, #bottom-nav {
+  transition: 0.2s;
+}
+
+#bottom-nav {
+  z-index: 100;
+}
+
+.contattami {
+  background-color: var(--dark-pink);
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 20rem;
+  height: 1.9rem;
+  display: flex;
+  padding-left: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contattami > a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar {
+  background: var(--dark-green);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.logo-container:hover {
+  scale: 1.1;
+}
+
+.social-icons {
+  font-size: 20px;
+}
+
+.navbar-toggler {
+  border: 2px solid var(--dark-pink) !important;
+  background-color: var(--light-pink) !important;
+}
+
+.navbar-toggler:hover {
+  background-color: #ecb9be !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler:active {
+  background-color: var(--dark-pink) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(228, 120, 133)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.nav-item > a {
+  color: #fff !important;
+}
+
+#prenota-button {
+  background-color: var(--dark-pink);
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+  width: 15rem;
+  height: 3.5rem;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--light-pink) !important;
+  color: var(--dark-pink) !important;
+}
+
+.btn:active {
+  background-color: var(--dark-pink) !important;
+  color: var(--light-pink) !important;
+}
+
+#send-msg, #check-av {
+  background-color: var(--dark-pink);
+  color: white;
+  font-weight: 500;
+}
+
+.big-img-container {
+  padding: 0 !important;
+  background-image: url(../assets/img/bg-orazio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  border-bottom: 3px solid var(--dark-pink);
+}
+
+.title {
+  font-size: 76px;
+  font-weight: normal;
+  padding-top: 8rem !important;
+  line-height: 0.9;
+}
+
+#potenziale {
+  color: var(--dark-pink);
+  text-shadow: 0 0 5px var(--darker-green);
+  font-size: 120px;
+  font-weight: bold;
+}
+
+#subtitle {
+  color: rgb(67, 67, 67);
+}
+
+#contact-btn {
+  background-color: #e47885;
+  color: white;
+  font-weight: bold;
+  width: 9rem;
+  height: 3.5rem;
+}
+
+#services-box {
+  background-color: #fadcdf;
+  padding-right: 2rem;
+  padding-block: 2rem;
+  border-radius: 30px;
+  box-shadow: 3px 3px 25px var(--darker-green);
+}
+
+.services {
+  padding-left: 2rem;
+}
+
+.list-item {
+  list-style: none;
+  background-image: url(https://cdn.prod.website-files.com/60c61592c3ee5b9a0b6c342a/65afc57de416c851e0e80b4c_check.svg);
+  background-position: 0 6px;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  padding-left: 16px;
+}
+
+#chisono-title, #innovazione-title {
+  padding-bottom: 1rem;
+}
+
+#chisono-img {
+  background-image: url(../assets/img/orazio-chi-sono.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  border: 3px solid var(--dark-pink);
+  border-radius: 30px;
+}
+
+#innovazione {
+  background-image: url(../assets/img/orazio-telefono.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+}
+
+.serv-icons {
+  font-size: 70px;
+  text-align: center;
+  color: #e47885;
+}
+
+.serv-titles {
+  color: var(--darker-green);
+}
+
+.forms-box {
+  background-color: var(--light-pink);
+  padding: 3rem !important;
+  border-radius: 30px;
+}
+
+#calendar-container {
+  margin-bottom: 20px;
+}
+
+#times-container {
+  margin-top: 20px;
+}
+
+button.btn-danger {
+  cursor: not-allowed;
+}
+
+.footer {
+  background-color: var(--light-green);
+}
+
+.footer > * {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .big-img-container {
+    height: 600px;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  #potenziale {
+    font-size: 85px;
+  }
+}
+
+@media (max-width: 576px) {
+  .big-img-container {
+    height: 500px;
+  }
+
+  .title > span {
+    padding: 0 !important;
+  }
+
+  .title {
+    font-size: 56px;
+    padding-left: 0;
+    padding-top: 4rem !important;
+  }
+
+  #potenziale {
+    font-size: 76px;
+  }
+
+  #subtitle {
+    color: rgb(40, 39, 39);
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 479px) {
+
+  .title {
+    font-size: 45px;
+  }
+
+  #potenziale {
+    font-size: 56px;
+  }
+
+  .pt-10 {
+    padding-top: 10rem !important;
+  }
+}
