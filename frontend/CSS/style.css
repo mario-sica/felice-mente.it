@@ -253,6 +253,12 @@ button.btn-danger {
   color: white;
 }
 
+@media (max-width: 992px) {
+  #innovazione {
+    width: 16rem;
+  }
+}
+
 @media (max-width: 768px) {
   .big-img-container {
     height: 600px;
