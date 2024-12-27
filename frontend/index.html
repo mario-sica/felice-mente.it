@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <header class="sticky-top">
+    <header class="sticky-top" style="z-index: 9999">
       <div
         class="banner-pre-nav d-none d-sm-flex justify-content-between align-items-center"
         id="top-nav"
@@ -127,9 +127,10 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" style="height: 790px">
             <div
-              class="container d-lg-flex justify-content-end pt-3 pt-lg-5 relative"
+              class="container d-lg-flex justify-content-end pt-3 pt-lg-5 sticky-top"
+              style="top: 10rem"
             >
               <div id="services-box">
                 <h3 class="services">Cosa offro?</h3>
@@ -256,7 +257,7 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="name"
+                    id="namec"
                     placeholder="Il tuo nome completo"
                     required
                   />
@@ -266,7 +267,7 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="email"
+                    id="emailc"
                     placeholder="La tua email"
                     required
                   />
@@ -276,7 +277,7 @@
                   <input
                     type="tel"
                     class="form-control"
-                    id="phone"
+                    id="phonec"
                     placeholder="Il tuo numero di telefono"
                     required
                   />

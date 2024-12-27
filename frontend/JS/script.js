@@ -4,7 +4,7 @@ document.getElementById('check-av').addEventListener('click', async () => {
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
 
-  const response = await fetch('/api/appointments');
+  const response = await fetch('http://localhost:3000/api/appointments');
   const data = await response.json();
   const appointment = data.appointments.find(app => app.date === date);
 
@@ -20,7 +20,7 @@ document.getElementById('check-av').addEventListener('click', async () => {
               button.className = 'btn btn-outline-success me-2';
               button.innerText = time;
               button.onclick = async () => {
-                  const bookingResponse = await fetch('/api/book', {
+                  const bookingResponse = await fetch('http://localhost:3000/api/book', {
                       method: 'POST',
                       headers: { 'Content-Type': 'application/json' },
                       body: JSON.stringify({ date, time, name, email, phone })

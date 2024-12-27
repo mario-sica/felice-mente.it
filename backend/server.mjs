@@ -1,11 +1,14 @@
 import express from 'express';
 import fs from 'fs/promises';
+import cors from 'cors';
+
 
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
 app.use(express.static('../frontend'));
+app.use(cors());
 
 app.use((req, res, next) => {
   res.setHeader("Content-Security-Policy", "default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;");
